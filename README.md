@@ -1,2 +1,2 @@
 # COVID19-India
-Description...
+This repository contains the code and data of the paper "What Explains India's Second Wave of COVID19 Infections?"
