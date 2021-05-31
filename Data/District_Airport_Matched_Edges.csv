@@ -1,0 +1,278 @@
+iata_o,iata_d,id_j,State_j,District_j,id_i,State_i,District_i
+VNS,AGR,60,Uttar Pradesh,Varanasi,37,Uttar Pradesh,Agra
+BOM,AGR,2,Maharashtra,Mumbai,37,Uttar Pradesh,Agra
+CCU,AJL,33,West Bengal,Kolkata,382,Mizoram,Aizawl
+IMF,AJL,382,Mizoram,Aizawl,382,Mizoram,Aizawl
+BOM,AMD,2,Maharashtra,Mumbai,8,Gujarat,Ahmedabad
+DEL,AMD,1,Delhi,Delhi,8,Gujarat,Ahmedabad
+MAA,AMD,10,Tamil Nadu,Chennai,8,Gujarat,Ahmedabad
+JAI,AMD,11,Rajasthan,Jaipur,8,Gujarat,Ahmedabad
+PNQ,AMD,5,Maharashtra,Pune,8,Gujarat,Ahmedabad
+CCU,AMD,33,West Bengal,Kolkata,8,Gujarat,Ahmedabad
+BLR,AMD,4,Karnataka,Bengaluru Urban,8,Gujarat,Ahmedabad
+BOM,ATQ,2,Maharashtra,Mumbai,131,Punjab,Amritsar
+SXR,ATQ,291,Jammu and Kashmir,Srinagar,131,Punjab,Amritsar
+DEL,ATQ,1,Delhi,Delhi,131,Punjab,Amritsar
+DEL,BBI,1,Delhi,Delhi,116,Odisha,Cuttack
+BLR,BBI,4,Karnataka,Bengaluru Urban,116,Odisha,Cuttack
+CCU,BBI,33,West Bengal,Kolkata,116,Odisha,Cuttack
+BOM,BBI,2,Maharashtra,Mumbai,116,Odisha,Cuttack
+VTZ,BBI,40,Andhra Pradesh,Visakhapatnam,116,Odisha,Cuttack
+DEL,BDQ,1,Delhi,Delhi,63,Gujarat,Vadodara
+BOM,BDQ,2,Maharashtra,Mumbai,63,Gujarat,Vadodara
+BOM,BHJ,2,Maharashtra,Mumbai,167,Gujarat,Kutch
+BOM,BHO,2,Maharashtra,Mumbai,145,Madhya Pradesh,Bhopal
+RPR,BHO,160,Chhattisgarh,Raipur,145,Madhya Pradesh,Bhopal
+DEL,BHO,1,Delhi,Delhi,145,Madhya Pradesh,Bhopal
+BOM,BHU,2,Maharashtra,Mumbai,102,Gujarat,Bhavnagar
+PNQ,BLR,5,Maharashtra,Pune,4,Karnataka,Bengaluru Urban
+DEL,BLR,1,Delhi,Delhi,4,Karnataka,Bengaluru Urban
+VTZ,BLR,40,Andhra Pradesh,Visakhapatnam,4,Karnataka,Bengaluru Urban
+MAA,BLR,10,Tamil Nadu,Chennai,4,Karnataka,Bengaluru Urban
+CJB,BLR,69,Tamil Nadu,Coimbatore,4,Karnataka,Bengaluru Urban
+CCU,BLR,33,West Bengal,Kolkata,4,Karnataka,Bengaluru Urban
+BOM,BLR,2,Maharashtra,Mumbai,4,Karnataka,Bengaluru Urban
+VGA,BLR,273,Karnataka,Vijayapura,4,Karnataka,Bengaluru Urban
+COK,BLR,87,Kerala,Kozhikode,4,Karnataka,Bengaluru Urban
+AMD,BLR,8,Gujarat,Ahmedabad,4,Karnataka,Bengaluru Urban
+MYQ,BLR,92,Karnataka,Mysuru,4,Karnataka,Bengaluru Urban
+TRV,BLR,78,Kerala,Thiruvananthapuram,4,Karnataka,Bengaluru Urban
+NAG,BLR,27,Maharashtra,Nagpur,4,Karnataka,Bengaluru Urban
+HBX,BLR,196,Karnataka,Dharwad,4,Karnataka,Bengaluru Urban
+IDR,BLR,80,Madhya Pradesh,Indore,4,Karnataka,Bengaluru Urban
+BBI,BLR,116,Odisha,Cuttack,4,Karnataka,Bengaluru Urban
+CCJ,BLR,87,Kerala,Kozhikode,4,Karnataka,Bengaluru Urban
+LKO,BLR,29,Uttar Pradesh,Lucknow,4,Karnataka,Bengaluru Urban
+JAI,BLR,11,Rajasthan,Jaipur,4,Karnataka,Bengaluru Urban
+PBD,BOM,366,Gujarat,Porbandar,2,Maharashtra,Mumbai
+IXC,BOM,321,Chandigarh,Chandigarh,2,Maharashtra,Mumbai
+JAI,BOM,11,Rajasthan,Jaipur,2,Maharashtra,Mumbai
+VTZ,BOM,40,Andhra Pradesh,Visakhapatnam,2,Maharashtra,Mumbai
+COK,BOM,87,Kerala,Kozhikode,2,Maharashtra,Mumbai
+AMD,BOM,8,Gujarat,Ahmedabad,2,Maharashtra,Mumbai
+NAG,BOM,27,Maharashtra,Nagpur,2,Maharashtra,Mumbai
+CCU,BOM,33,West Bengal,Kolkata,2,Maharashtra,Mumbai
+BBI,BOM,116,Odisha,Cuttack,2,Maharashtra,Mumbai
+IXU,BOM,57,Maharashtra,Aurangabad,2,Maharashtra,Mumbai
+CCJ,BOM,87,Kerala,Kozhikode,2,Maharashtra,Mumbai
+DEL,BOM,1,Delhi,Delhi,2,Maharashtra,Mumbai
+BLR,BOM,4,Karnataka,Bengaluru Urban,2,Maharashtra,Mumbai
+BHO,BOM,145,Madhya Pradesh,Bhopal,2,Maharashtra,Mumbai
+BDQ,BOM,63,Gujarat,Vadodara,2,Maharashtra,Mumbai
+JDH,BOM,58,Rajasthan,Jodhpur,2,Maharashtra,Mumbai
+CJB,BOM,69,Tamil Nadu,Coimbatore,2,Maharashtra,Mumbai
+BHU,BOM,102,Gujarat,Bhavnagar,2,Maharashtra,Mumbai
+PNQ,BOM,5,Maharashtra,Pune,2,Maharashtra,Mumbai
+JLR,BOM,136,Madhya Pradesh,Jabalpur,2,Maharashtra,Mumbai
+IXR,BOM,97,Jharkhand,Ranchi,2,Maharashtra,Mumbai
+MAA,BOM,10,Tamil Nadu,Chennai,2,Maharashtra,Mumbai
+JGA,BOM,161,Gujarat,Jamnagar,2,Maharashtra,Mumbai
+RAJ,BOM,83,Gujarat,Rajkot,2,Maharashtra,Mumbai
+TRV,BOM,78,Kerala,Thiruvananthapuram,2,Maharashtra,Mumbai
+STV,BOM,13,Gujarat,Surat,2,Maharashtra,Mumbai
+LKO,BOM,29,Uttar Pradesh,Lucknow,2,Maharashtra,Mumbai
+IXD,BOM,34,Uttar Pradesh,Jaunpur,2,Maharashtra,Mumbai
+VNS,BOM,60,Uttar Pradesh,Varanasi,2,Maharashtra,Mumbai
+IXJ,BOM,249,Jammu and Kashmir,Jammu,2,Maharashtra,Mumbai
+GWL,BOM,177,Madhya Pradesh,Gwalior,2,Maharashtra,Mumbai
+BHJ,BOM,167,Gujarat,Kutch,2,Maharashtra,Mumbai
+IDR,BOM,80,Madhya Pradesh,Indore,2,Maharashtra,Mumbai
+UDR,BOM,88,Rajasthan,Udaipur,2,Maharashtra,Mumbai
+RPR,BOM,160,Chhattisgarh,Raipur,2,Maharashtra,Mumbai
+HBX,BOM,196,Karnataka,Dharwad,2,Maharashtra,Mumbai
+SXR,BOM,291,Jammu and Kashmir,Srinagar,2,Maharashtra,Mumbai
+ATQ,BOM,131,Punjab,Amritsar,2,Maharashtra,Mumbai
+AGR,BOM,37,Uttar Pradesh,Agra,2,Maharashtra,Mumbai
+BLR,CCJ,4,Karnataka,Bengaluru Urban,87,Kerala,Kozhikode
+CJB,CCJ,69,Tamil Nadu,Coimbatore,87,Kerala,Kozhikode
+MAA,CCJ,10,Tamil Nadu,Chennai,87,Kerala,Kozhikode
+COK,CCJ,87,Kerala,Kozhikode,87,Kerala,Kozhikode
+BOM,CCJ,2,Maharashtra,Mumbai,87,Kerala,Kozhikode
+BLR,CCU,4,Karnataka,Bengaluru Urban,33,West Bengal,Kolkata
+AMD,CCU,8,Gujarat,Ahmedabad,33,West Bengal,Kolkata
+DEL,CCU,1,Delhi,Delhi,33,West Bengal,Kolkata
+BOM,CCU,2,Maharashtra,Mumbai,33,West Bengal,Kolkata
+RPR,CCU,160,Chhattisgarh,Raipur,33,West Bengal,Kolkata
+VNS,CCU,60,Uttar Pradesh,Varanasi,33,West Bengal,Kolkata
+AJL,CCU,382,Mizoram,Aizawl,33,West Bengal,Kolkata
+IXA,CCU,379,Tripura,Gomati,33,West Bengal,Kolkata
+VTZ,CCU,40,Andhra Pradesh,Visakhapatnam,33,West Bengal,Kolkata
+IXB,CCU,238,West Bengal,Darjeeling,33,West Bengal,Kolkata
+PAT,CCU,15,Bihar,Patna,33,West Bengal,Kolkata
+IMF,CCU,382,Mizoram,Aizawl,33,West Bengal,Kolkata
+JAI,CCU,11,Rajasthan,Jaipur,33,West Bengal,Kolkata
+IXR,CCU,97,Jharkhand,Ranchi,33,West Bengal,Kolkata
+MAA,CCU,10,Tamil Nadu,Chennai,33,West Bengal,Kolkata
+NAG,CCU,27,Maharashtra,Nagpur,33,West Bengal,Kolkata
+PNQ,CCU,5,Maharashtra,Pune,33,West Bengal,Kolkata
+SHL,CCU,339,Meghalaya,East Khasi Hills,33,West Bengal,Kolkata
+BBI,CCU,116,Odisha,Cuttack,33,West Bengal,Kolkata
+BOM,CJB,2,Maharashtra,Mumbai,69,Tamil Nadu,Coimbatore
+MAA,CJB,10,Tamil Nadu,Chennai,69,Tamil Nadu,Coimbatore
+BLR,CJB,4,Karnataka,Bengaluru Urban,69,Tamil Nadu,Coimbatore
+DEL,CJB,1,Delhi,Delhi,69,Tamil Nadu,Coimbatore
+CCJ,CJB,87,Kerala,Kozhikode,69,Tamil Nadu,Coimbatore
+CCJ,COK,87,Kerala,Kozhikode,87,Kerala,Kozhikode
+DEL,COK,1,Delhi,Delhi,87,Kerala,Kozhikode
+MAA,COK,10,Tamil Nadu,Chennai,87,Kerala,Kozhikode
+BOM,COK,2,Maharashtra,Mumbai,87,Kerala,Kozhikode
+BLR,COK,4,Karnataka,Bengaluru Urban,87,Kerala,Kozhikode
+TRV,COK,78,Kerala,Thiruvananthapuram,87,Kerala,Kozhikode
+PNQ,COK,5,Maharashtra,Pune,87,Kerala,Kozhikode
+DEL,DED,1,Delhi,Delhi,218,Uttarakhand,Dehradun
+LKO,DED,29,Uttar Pradesh,Lucknow,218,Uttarakhand,Dehradun
+AMD,DEL,8,Gujarat,Ahmedabad,1,Delhi,Delhi
+LKO,DEL,29,Uttar Pradesh,Lucknow,1,Delhi,Delhi
+KNU,DEL,30,Uttar Pradesh,Kanpur Nagar,1,Delhi,Delhi
+RPR,DEL,160,Chhattisgarh,Raipur,1,Delhi,Delhi
+VTZ,DEL,40,Andhra Pradesh,Visakhapatnam,1,Delhi,Delhi
+SXR,DEL,291,Jammu and Kashmir,Srinagar,1,Delhi,Delhi
+BLR,DEL,4,Karnataka,Bengaluru Urban,1,Delhi,Delhi
+CJB,DEL,69,Tamil Nadu,Coimbatore,1,Delhi,Delhi
+BOM,DEL,2,Maharashtra,Mumbai,1,Delhi,Delhi
+UDR,DEL,88,Rajasthan,Udaipur,1,Delhi,Delhi
+IDR,DEL,80,Madhya Pradesh,Indore,1,Delhi,Delhi
+CCU,DEL,33,West Bengal,Kolkata,1,Delhi,Delhi
+PAT,DEL,15,Bihar,Patna,1,Delhi,Delhi
+DED,DEL,218,Uttarakhand,Dehradun,1,Delhi,Delhi
+PNQ,DEL,5,Maharashtra,Pune,1,Delhi,Delhi
+ATQ,DEL,131,Punjab,Amritsar,1,Delhi,Delhi
+BHO,DEL,145,Madhya Pradesh,Bhopal,1,Delhi,Delhi
+BBI,DEL,116,Odisha,Cuttack,1,Delhi,Delhi
+COK,DEL,87,Kerala,Kozhikode,1,Delhi,Delhi
+JAI,DEL,11,Rajasthan,Jaipur,1,Delhi,Delhi
+IXR,DEL,97,Jharkhand,Ranchi,1,Delhi,Delhi
+DHM,DEL,252,Himachal Pradesh,Kangra,1,Delhi,Delhi
+IXJ,DEL,249,Jammu and Kashmir,Jammu,1,Delhi,Delhi
+JLR,DEL,136,Madhya Pradesh,Jabalpur,1,Delhi,Delhi
+BDQ,DEL,63,Gujarat,Vadodara,1,Delhi,Delhi
+IXC,DEL,321,Chandigarh,Chandigarh,1,Delhi,Delhi
+JDH,DEL,58,Rajasthan,Jodhpur,1,Delhi,Delhi
+IXD,DEL,34,Uttar Pradesh,Jaunpur,1,Delhi,Delhi
+IXU,DEL,57,Maharashtra,Aurangabad,1,Delhi,Delhi
+IXL,DEL,393,Ladakh,Leh,1,Delhi,Delhi
+VNS,DEL,60,Uttar Pradesh,Varanasi,1,Delhi,Delhi
+LUH,DEL,67,Punjab,Ludhiana,1,Delhi,Delhi
+NAG,DEL,27,Maharashtra,Nagpur,1,Delhi,Delhi
+IXB,DEL,238,West Bengal,Darjeeling,1,Delhi,Delhi
+MAA,DEL,10,Tamil Nadu,Chennai,1,Delhi,Delhi
+STV,DEL,13,Gujarat,Surat,1,Delhi,Delhi
+DEL,DHM,1,Delhi,Delhi,252,Himachal Pradesh,Kangra
+BOM,GWL,2,Maharashtra,Mumbai,177,Madhya Pradesh,Gwalior
+BOM,HBX,2,Maharashtra,Mumbai,196,Karnataka,Dharwad
+BLR,HBX,4,Karnataka,Bengaluru Urban,196,Karnataka,Dharwad
+RPR,IDR,160,Chhattisgarh,Raipur,80,Madhya Pradesh,Indore
+BLR,IDR,4,Karnataka,Bengaluru Urban,80,Madhya Pradesh,Indore
+DEL,IDR,1,Delhi,Delhi,80,Madhya Pradesh,Indore
+BOM,IDR,2,Maharashtra,Mumbai,80,Madhya Pradesh,Indore
+NAG,IDR,27,Maharashtra,Nagpur,80,Madhya Pradesh,Indore
+PNQ,IDR,5,Maharashtra,Pune,80,Madhya Pradesh,Indore
+CCU,IMF,33,West Bengal,Kolkata,382,Mizoram,Aizawl
+IXA,IMF,379,Tripura,Gomati,382,Mizoram,Aizawl
+AJL,IMF,382,Mizoram,Aizawl,382,Mizoram,Aizawl
+CCU,IXA,33,West Bengal,Kolkata,379,Tripura,Gomati
+IMF,IXA,382,Mizoram,Aizawl,379,Tripura,Gomati
+DEL,IXB,1,Delhi,Delhi,238,West Bengal,Darjeeling
+CCU,IXB,33,West Bengal,Kolkata,238,West Bengal,Darjeeling
+DEL,IXC,1,Delhi,Delhi,321,Chandigarh,Chandigarh
+BOM,IXC,2,Maharashtra,Mumbai,321,Chandigarh,Chandigarh
+SXR,IXC,291,Jammu and Kashmir,Srinagar,321,Chandigarh,Chandigarh
+DEL,IXD,1,Delhi,Delhi,34,Uttar Pradesh,Jaunpur
+BOM,IXD,2,Maharashtra,Mumbai,34,Uttar Pradesh,Jaunpur
+SXR,IXJ,291,Jammu and Kashmir,Srinagar,249,Jammu and Kashmir,Jammu
+BOM,IXJ,2,Maharashtra,Mumbai,249,Jammu and Kashmir,Jammu
+DEL,IXJ,1,Delhi,Delhi,249,Jammu and Kashmir,Jammu
+IXL,IXJ,393,Ladakh,Leh,249,Jammu and Kashmir,Jammu
+DEL,IXL,1,Delhi,Delhi,393,Ladakh,Leh
+SXR,IXL,291,Jammu and Kashmir,Srinagar,393,Ladakh,Leh
+IXJ,IXL,249,Jammu and Kashmir,Jammu,393,Ladakh,Leh
+MAA,IXM,10,Tamil Nadu,Chennai,49,Tamil Nadu,Madurai
+DEL,IXR,1,Delhi,Delhi,97,Jharkhand,Ranchi
+CCU,IXR,33,West Bengal,Kolkata,97,Jharkhand,Ranchi
+PAT,IXR,15,Bihar,Patna,97,Jharkhand,Ranchi
+BOM,IXU,2,Maharashtra,Mumbai,57,Maharashtra,Aurangabad
+DEL,IXU,1,Delhi,Delhi,57,Maharashtra,Aurangabad
+DEL,JAI,1,Delhi,Delhi,11,Rajasthan,Jaipur
+BLR,JAI,4,Karnataka,Bengaluru Urban,11,Rajasthan,Jaipur
+CCU,JAI,33,West Bengal,Kolkata,11,Rajasthan,Jaipur
+BOM,JAI,2,Maharashtra,Mumbai,11,Rajasthan,Jaipur
+AMD,JAI,8,Gujarat,Ahmedabad,11,Rajasthan,Jaipur
+DEL,JDH,1,Delhi,Delhi,58,Rajasthan,Jodhpur
+BOM,JDH,2,Maharashtra,Mumbai,58,Rajasthan,Jodhpur
+BOM,JGA,2,Maharashtra,Mumbai,161,Gujarat,Jamnagar
+DEL,JLR,1,Delhi,Delhi,136,Madhya Pradesh,Jabalpur
+BOM,JLR,2,Maharashtra,Mumbai,136,Madhya Pradesh,Jabalpur
+DEL,KNU,1,Delhi,Delhi,30,Uttar Pradesh,Kanpur Nagar
+BLR,LKO,4,Karnataka,Bengaluru Urban,29,Uttar Pradesh,Lucknow
+DEL,LKO,1,Delhi,Delhi,29,Uttar Pradesh,Lucknow
+BOM,LKO,2,Maharashtra,Mumbai,29,Uttar Pradesh,Lucknow
+DED,LKO,218,Uttarakhand,Dehradun,29,Uttar Pradesh,Lucknow
+PAT,LKO,15,Bihar,Patna,29,Uttar Pradesh,Lucknow
+DEL,LUH,1,Delhi,Delhi,67,Punjab,Ludhiana
+BLR,MAA,4,Karnataka,Bengaluru Urban,10,Tamil Nadu,Chennai
+CCU,MAA,33,West Bengal,Kolkata,10,Tamil Nadu,Chennai
+COK,MAA,87,Kerala,Kozhikode,10,Tamil Nadu,Chennai
+IXM,MAA,49,Tamil Nadu,Madurai,10,Tamil Nadu,Chennai
+TRV,MAA,78,Kerala,Thiruvananthapuram,10,Tamil Nadu,Chennai
+BOM,MAA,2,Maharashtra,Mumbai,10,Tamil Nadu,Chennai
+DEL,MAA,1,Delhi,Delhi,10,Tamil Nadu,Chennai
+CCJ,MAA,87,Kerala,Kozhikode,10,Tamil Nadu,Chennai
+VTZ,MAA,40,Andhra Pradesh,Visakhapatnam,10,Tamil Nadu,Chennai
+PNQ,MAA,5,Maharashtra,Pune,10,Tamil Nadu,Chennai
+TRZ,MAA,108,Tamil Nadu,Tiruchirappalli,10,Tamil Nadu,Chennai
+AMD,MAA,8,Gujarat,Ahmedabad,10,Tamil Nadu,Chennai
+CJB,MAA,69,Tamil Nadu,Coimbatore,10,Tamil Nadu,Chennai
+BLR,MYQ,4,Karnataka,Bengaluru Urban,92,Karnataka,Mysuru
+BOM,NAG,2,Maharashtra,Mumbai,27,Maharashtra,Nagpur
+DEL,NAG,1,Delhi,Delhi,27,Maharashtra,Nagpur
+CCU,NAG,33,West Bengal,Kolkata,27,Maharashtra,Nagpur
+IDR,NAG,80,Madhya Pradesh,Indore,27,Maharashtra,Nagpur
+BLR,NAG,4,Karnataka,Bengaluru Urban,27,Maharashtra,Nagpur
+PNQ,NAG,5,Maharashtra,Pune,27,Maharashtra,Nagpur
+LKO,PAT,29,Uttar Pradesh,Lucknow,15,Bihar,Patna
+BOM,PAT,2,Maharashtra,Mumbai,15,Bihar,Patna
+DEL,PAT,1,Delhi,Delhi,15,Bihar,Patna
+CCU,PAT,33,West Bengal,Kolkata,15,Bihar,Patna
+IXR,PAT,97,Jharkhand,Ranchi,15,Bihar,Patna
+MAA,PNQ,10,Tamil Nadu,Chennai,5,Maharashtra,Pune
+DEL,PNQ,1,Delhi,Delhi,5,Maharashtra,Pune
+BOM,PNQ,2,Maharashtra,Mumbai,5,Maharashtra,Pune
+IDR,PNQ,80,Madhya Pradesh,Indore,5,Maharashtra,Pune
+AMD,PNQ,8,Gujarat,Ahmedabad,5,Maharashtra,Pune
+BLR,PNQ,4,Karnataka,Bengaluru Urban,5,Maharashtra,Pune
+NAG,PNQ,27,Maharashtra,Nagpur,5,Maharashtra,Pune
+COK,PNQ,87,Kerala,Kozhikode,5,Maharashtra,Pune
+CCU,PNQ,33,West Bengal,Kolkata,5,Maharashtra,Pune
+BOM,RAJ,2,Maharashtra,Mumbai,83,Gujarat,Rajkot
+DEL,RPR,1,Delhi,Delhi,160,Chhattisgarh,Raipur
+BOM,RPR,2,Maharashtra,Mumbai,160,Chhattisgarh,Raipur
+CCU,RPR,33,West Bengal,Kolkata,160,Chhattisgarh,Raipur
+NAG,RPR,27,Maharashtra,Nagpur,160,Chhattisgarh,Raipur
+IDR,RPR,80,Madhya Pradesh,Indore,160,Chhattisgarh,Raipur
+CCU,SHL,33,West Bengal,Kolkata,339,Meghalaya,East Khasi Hills
+BOM,STV,2,Maharashtra,Mumbai,13,Gujarat,Surat
+DEL,STV,1,Delhi,Delhi,13,Gujarat,Surat
+DEL,SXR,1,Delhi,Delhi,291,Jammu and Kashmir,Srinagar
+BOM,SXR,2,Maharashtra,Mumbai,291,Jammu and Kashmir,Srinagar
+IXJ,SXR,249,Jammu and Kashmir,Jammu,291,Jammu and Kashmir,Srinagar
+ATQ,SXR,131,Punjab,Amritsar,291,Jammu and Kashmir,Srinagar
+IXC,SXR,321,Chandigarh,Chandigarh,291,Jammu and Kashmir,Srinagar
+IXL,SXR,393,Ladakh,Leh,291,Jammu and Kashmir,Srinagar
+COK,TRV,87,Kerala,Kozhikode,78,Kerala,Thiruvananthapuram
+BLR,TRV,4,Karnataka,Bengaluru Urban,78,Kerala,Thiruvananthapuram
+BOM,TRV,2,Maharashtra,Mumbai,78,Kerala,Thiruvananthapuram
+MAA,TRV,10,Tamil Nadu,Chennai,78,Kerala,Thiruvananthapuram
+MAA,TRZ,10,Tamil Nadu,Chennai,108,Tamil Nadu,Tiruchirappalli
+DEL,UDR,1,Delhi,Delhi,88,Rajasthan,Udaipur
+BOM,UDR,2,Maharashtra,Mumbai,88,Rajasthan,Udaipur
+BLR,VGA,4,Karnataka,Bengaluru Urban,273,Karnataka,Vijayapura
+DEL,VNS,1,Delhi,Delhi,60,Uttar Pradesh,Varanasi
+CCU,VNS,33,West Bengal,Kolkata,60,Uttar Pradesh,Varanasi
+BOM,VNS,2,Maharashtra,Mumbai,60,Uttar Pradesh,Varanasi
+BLR,VTZ,4,Karnataka,Bengaluru Urban,40,Andhra Pradesh,Visakhapatnam
+CCU,VTZ,33,West Bengal,Kolkata,40,Andhra Pradesh,Visakhapatnam
+RPR,VTZ,160,Chhattisgarh,Raipur,40,Andhra Pradesh,Visakhapatnam
+BBI,VTZ,116,Odisha,Cuttack,40,Andhra Pradesh,Visakhapatnam
+DEL,VTZ,1,Delhi,Delhi,40,Andhra Pradesh,Visakhapatnam
+MAA,VTZ,10,Tamil Nadu,Chennai,40,Andhra Pradesh,Visakhapatnam
+BOM,VTZ,2,Maharashtra,Mumbai,40,Andhra Pradesh,Visakhapatnam
