@@ -276,7 +276,7 @@ num_block = 25
 
 num_obs = model_df$Date %>% unique() %>% length()
 
-sir_text_size = 30
+sir_text_size = 15
 
 alpha_value = 0.3
 
