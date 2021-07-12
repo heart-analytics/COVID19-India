@@ -17,9 +17,9 @@ variants of concern and to regulate super-spreader events, while
 vaccination remains the only long-term solution.
 
 The code of the analysis presented here in the R Markdown source file
-[README.Rmd](../README.Rmd). Draft of paper is in
-[COVID19-India.pdf](../COVID19-India.pdf). The data is in folder
-[Data](../Data). We obtained the data from
+[README.Rmd](README.Rmd). Draft of paper is in
+[COVID19-India.pdf](COVID19-India.pdf). The data is in folder
+[Data](/Data). We obtained the data from
 [www.covid19india.org](https://www.covid19india.org/).
 
 **Figure 1. Plot (a) shows the number of daily new COVID-19 cases for
