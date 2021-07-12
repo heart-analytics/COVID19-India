@@ -26,7 +26,7 @@ library(glmnet)
 
 India experienced a rapid surge in COVID-19 infections during March-April 2021 that overwhelmed the healthcare system. This paper shows that the circulation of the Delta variant of the SARS-CoV-2 virus, amplified by a super-spreader event, likely caused India’s second wave. We analyze publicly available district-wise data of COVID-19 infections in India over 2020 and 2021. We use a combination of time-series analysis, epidemiological modeling, and parameter estimation methods. The data shows that a super-spreader event (Kumbh Mela festival being the possible candidate) is probable responsible for circulating the highly transmissible B.1.617.2 (Delta) variant of the SARS-CoV-2 virus that caused India’s second wave. Thus, the Indian experience serves as a cautionary tale that calls for increased genomic sequencing to identify variants of concern and to regulate super-spreader events, while vaccination remains the only long-term solution.
 
-The code of the analysis presented here in the R Markdown source file [README.Rmd](blob/main/README.Rmd). Draft of paper is in [COVID19-India.pdf](blob/main/COVID19-India.pdf). The data is in [Data](tree/main/Data) folder. We obtained the data from [www.covid19india.org](https://www.covid19india.org/).
+The code of the analysis presented here in the R Markdown source file [README.Rmd](/README.Rmd). Draft of paper is in [COVID19-India.pdf](/COVID19-India.pdf). The data is in [Data](/Data) folder. We obtained the data from [www.covid19india.org](https://www.covid19india.org/).
 
 ```{r}
 model_df <- read.csv("Data/dfIndia_to_models_districts_with_Mobility_for_paper.csv") %>%
