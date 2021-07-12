@@ -17,9 +17,9 @@ variants of concern and to regulate super-spreader events, while
 vaccination remains the only long-term solution.
 
 The code of the analysis presented here in the R Markdown source file
-[README.rmd](README.rmd). Draft of paper is in
-[COVID19-India.pdf](COVID19-India.pdf). Data is in folder
-[Data](/Data/). We obtained the data from
+[README.Rmd](../README.Rmd). Draft of paper is in
+[COVID19-India.pdf](../COVID19-India.pdf). The data is in folder
+[Data](../Data). We obtained the data from
 [www.covid19india.org](https://www.covid19india.org/).
 
 **Figure 1. Plot (a) shows the number of daily new COVID-19 cases for
@@ -126,6 +126,6 @@ Please see paper for details.
 districts over 2-week time windows from 05/01/2020 to 05/08/2021. The
 regression errors in explaining the emergence of daily new infections
 with the estimated β’s is given in (c). Plot (d) shows the quantiles of
-mobility variations across districts.**
+mobility variations across districts.** text
 
-<img src="README_figs_bkp/README-unnamed-chunk-26-1.png" width="4800" />
+<img src="README_figs/README-unnamed-chunk-26-1.png" width="4800" />
