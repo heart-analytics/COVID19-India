@@ -446,7 +446,7 @@ beta_estimation_pipeline <- function(lambda, lambda2) {
 ```
 
 **Figure 5. Plots (a) and (b) capture the quantiles of  ’s and  ’s across districts over 2-week time windows from 05/01/2020 to 05/08/2021. The regression errors in explaining the emergence of daily new infections with the estimated β’s is given in (c). Plot (d) shows the quantiles of mobility variations across districts.**
-
+text
 
 ```{r Figure 5}
 if(if_run_regression_or_read_figure){
