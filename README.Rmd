@@ -454,7 +454,7 @@ if(if_run_regression_or_read_figure){
   exp <- 1e-3
   p <- beta_estimation_pipeline(l, ext)
 }else{
-  include_graphics("README_figs_bkp/README-unnamed-chunk-26-1.png")
+  include_graphics("README_figs/README-unnamed-chunk-26-1.png")
 }
 ```
 
