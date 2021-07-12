@@ -26,7 +26,7 @@ library(glmnet)
 
 India experienced a rapid surge in COVID-19 infections during March-April 2021 that overwhelmed the healthcare system. This paper shows that the circulation of the Delta variant of the SARS-CoV-2 virus, amplified by a super-spreader event, likely caused India’s second wave. We analyze publicly available district-wise data of COVID-19 infections in India over 2020 and 2021. We use a combination of time-series analysis, epidemiological modeling, and parameter estimation methods. The data shows that a super-spreader event (Kumbh Mela festival being the possible candidate) is probable responsible for circulating the highly transmissible B.1.617.2 (Delta) variant of the SARS-CoV-2 virus that caused India’s second wave. Thus, the Indian experience serves as a cautionary tale that calls for increased genomic sequencing to identify variants of concern and to regulate super-spreader events, while vaccination remains the only long-term solution.
 
-The code of the analysis presented here in the R Markdown source file [README.Rmd](/README.Rmd). Draft of paper is in [COVID19-India.pdf](/COVID19-India.pdf). The data is in [Data](/Data) folder. We obtained the data from [www.covid19india.org](https://www.covid19india.org/).
+The source code of the analysis presented here is in the R Markdown file [README.Rmd](/README.Rmd). Draft of paper is in [COVID19-India.pdf](/Docs/COVID19-India.pdf). The data is in [Data](/Data) folder. We obtained the data from [www.covid19india.org](https://www.covid19india.org/).
 
 ```{r}
 model_df <- read.csv("Data/dfIndia_to_models_districts_with_Mobility_for_paper.csv") %>%
@@ -41,9 +41,9 @@ second_wave_df <- model_df %>%
   filter(year(Date) == 2021, month(Date) %in% c(3,4,5))
 ```
 
-**Figure 1. Plot (a) shows the number of daily new COVID-19 cases for all states in India, smoothed via a 21-day moving average.** 
+**Figure 1(a) shows the number of daily new COVID-19 cases for all states in India, smoothed via a 21-day moving average.** 
 
-```{r Figure 1 (a), echo=FALSE}
+```{r Figure-1(a), echo=FALSE}
 text_size = 25
 model_df %>%
   group_by(District_ID) %>%
@@ -59,6 +59,28 @@ model_df %>%
   labs(x ="Date", y = "Daily New Cases (1K)") + theme(text = element_text(face="bold", size=text_size),
         axis.text.x = element_text(face="bold", size = text_size), axis.text.y = element_text(face="bold", size = text_size)) +
   scale_x_date(labels = date_format("%b-%y"))
+```
+
+**Figure 1(b) illustrates the number of districts with 5 or more cumulative new COVID-19 cases since the start dates of the two waves.**
+
+```{r Figure-1(b), echo=FALSE, message = FALSE}
+xtitle <- 'Days since the start of wave'
+
+df1b <- 
+  read_csv("Data/Figure1b.csv") %>% 
+  rename('First' = first) %>% 
+  rename('Second' = second) %>% 
+  pivot_longer(cols = c(2,3), names_to = "Wave")
+
+ytitle <- 'Number of Districts'
+file_name <- "Number_of_districts_greater_5_v2"
+
+df1b %>% 
+  ggplot(aes(x = Day, y = value, colour = Wave)) +
+  geom_line(aes(linetype = Wave), size = 1.2) + 
+  theme_bw() + 
+  theme(text = element_text(size = 18), legend.position = c(0.8, 0.2), axis.title = element_text(face="bold", size=17)) + 
+  labs(x =xtitle, y = ytitle)
 ```
 
 <!-- #### Tp% Box plot -->
@@ -114,7 +136,7 @@ second_raw <- second_wave_df %>%
 
 **Figure 2(a) portrays $T_{p\%}$  across 394 districts during the first wave.** 
 
-```{r Figure 2(a)}
+```{r Figure-2(a)}
 box_text_size = 25
 first_raw %>%
   filter(peak_id < 6) %>%
@@ -125,8 +147,9 @@ first_raw %>%
   scale_x_discrete(labels=c("10", "20", "30", "40", "50")) + scale_y_continuous(limits = c(0, 100))
 ```
 
-**Figure 2(b) portrays the same for the second wave.**
-```{r Figure 2(b)}
+**Figure 2(b) portrays $T_{p\%}$ for the second wave.**
+
+```{r Figure-2(b)}
 box_text_size = 25
 second_raw %>%
   filter(peak_id < 6) %>%
@@ -141,7 +164,48 @@ second_raw %>%
 
 ## Origins of the COVID-19 Waves in India
 
-<!-- ### Cross-covariance of time-series -->
+### Cross-covariance of time-series
+
+Consider the sequence of new daily COVID-19 infections in district $i$ on day $t$ as $\rho^i_t$, where $t$ is measured as days since the start dates of each wave. Then, the cross-covariance function over $T$ time-periods is described by
+
+$$
+    \mathcal{C}(i,j; \kappa) := \frac{1}{T}\sum_{t=1}^T \left( \rho^i_t - \langle \rho^i\rangle \right) \left( \rho^j_{t+\kappa} - \langle \rho^j\rangle \right),
+$$
+
+where $\kappa$ denotes the time-shift of one time-series with respect to the other in calculating the covariance. Here, $\langle \rho^i\rangle$ and $\langle \rho^j\rangle$ compute the empirical means of the $T$-length time series $\rho^i$ and $\rho^j$, respectively. The value of $\kappa_\star(i, j)$ at which the covariance is maximized between the daily new infections in district $i$ and that in district $j$ denotes the number of days by which the infection pattern in district $j$ roughly lags the pattern in district $i$. We vary $\kappa$ in $[-30, 30]$ with $T=92$ days for the emergence of the first wave and $T=69$ days for the second wave to compute $\kappa_\star(i, j)$. 
+
+A time-lag between the patterns of district $i$ and district $j$   does not imply that infected people from district  $i$ came in direct contact with people in district $j$ to drive the spread of COVID-19. However, consistent positive values of $\kappa_\star(i, j)$’s for multiple $j$’s suggests that district $i$ is an epicenter of the infection spread.
+
+Figure 3 portrays a bubble plot of $\sum_{j=1}^N\kappa_\star(i, j)$  over those locations $i$ for which this sum is positive. A larger bubble indicates higher likelihood of a location being a source of the infection spread. Figure 3 reveals important differences between the likely epicenters of the two waves.
+
+
+**Figure 3. Bubble plots of $\kappa_\star$ for districts that have $\kappa_\star >0$ for the first wave in (a) and the second wave in (b). The size of the bubble indicates the magnitude of $\kappa_\star$. The dotted areas identify Maharashtra and the Ganges belt.**
+
+```{r Figure-3}
+include_graphics("Docs/Figure-3.png")
+```
+
+**Figure 4. Variation of average population of districts with cumulative number of 5 or more infections since the start of the waves as in Figure 1.**
+Start dates of the two waves are 05/01/2020 and 03/01/2021.
+
+```{r Figure-4, message = FALSE}
+df5 <- 
+  read_csv("Data/Figure4.csv") %>% 
+  rename('First' = first) %>% 
+  rename('Second' = second) %>% 
+  pivot_longer(cols = c(2,3), names_to = "Wave")
+
+ytitle <- 'Average Population (100,000)'
+file_name <- "Average_Population_greater_5_v2"
+
+df5 %>% 
+  ggplot(aes(x = Day, y = value, colour = Wave)) +
+  geom_line(aes(linetype = Wave), size = 1.2) + 
+  theme_bw() + 
+  theme(text = element_text(size = 18), legend.position = c(0.8, 0.8), axis.title = element_text(face="bold", size=17)) + 
+  labs(x =xtitle, y = ytitle)
+```
+
 
 <!-- ```{r} -->
 <!-- District_list <- model_df %>% -->
@@ -218,8 +282,41 @@ $$
 \end{aligned}
 $$
 where
-$$I_{\text{ext}}^i(t) = \frac{\sum_{j:(j,i) \in G}I^j(t)P^j}{\sum_{j:(j,i)\in G}P^j}.$$
-Please see paper for details. 
+$$I_{\text{ext}}^i(t) = \frac{\sum_{j:(j,i) \in \mathcal{G}}I^j(t)P^j}{\sum_{j:(j,i)\in \mathcal{G}}P^j}.$$
+
+We use two sets of data–the cumulative fraction of COVID-19 cases $Q^i$ on $t=1$ in district $i$ and the fraction of new COVID-positive cases $\Delta^i(t)$ in district $i$ on days $t=1,\ldots,T$. Specifically, $Q^i$’s yield 
+
+$$
+    S^i(1) = 1 - Q^i, \ I^i(1) = (1-\gamma) Q^i, \ R^i(1) = \gamma Q^i,
+$$
+that are then propagated using $\Delta$'s via
+$$
+\begin{aligned}
+    S^i(t+1) &= S^i(t) - \Delta^i(t),
+    \\
+    I^i(t+1) &= I^i(t) + \Delta^i(t) - \gamma I^i(t), \\
+    R^i(t+1) &= R^i(t) + \gamma I^i(t).
+\end{aligned}
+$$
+Regression:
+$$
+\begin{aligned}
+    &\varphi\left({\beta}[1], \ldots, {\beta}[26]\right)
+    \\
+    &:= \sum_{i=1}^N \sum_{\tau=1}^{26} \sum_{t=14\tau - 13}^{14\tau} \left(\Delta^i(t) - \beta^{i}_{\textrm{int}}[\tau] I^i(t) S^i(t) 
+    -  \beta^{i}_{\textrm{ext}}[\tau] I^i_{\textrm{ext}}(t) S^i(t) \right)^2
+    \\
+    & \quad + \lambda \sum_{\tau=1}^{25}
+    \sum_{i=1}^{N} 
+    \left[ \left({\beta}^i_\textrm{int}[\tau+1]) - {\beta}^i_\textrm{int}[\tau]) \right)^2 
+    + \left({\beta}^i_\textrm{ext}[\tau+1]) - {\beta}^i_\textrm{ext}[\tau]) \right)^2
+    \right]
+    \\
+    & \quad 
+    + \rho \sum_{\tau=1}^{26} \sum_{i=1}^{N} \beta_\textrm{ext}[\tau]^2.
+\end{aligned}
+$$
+Please see the paper for details. 
 
 ```{r}
 if(if_run_regression_or_read_figure){
@@ -448,13 +545,13 @@ beta_estimation_pipeline <- function(lambda, lambda2) {
 **Figure 5. Plots (a) and (b) capture the quantiles of  ’s and  ’s across districts over 2-week time windows from 05/01/2020 to 05/08/2021. The regression errors in explaining the emergence of daily new infections with the estimated β’s is given in (c). Plot (d) shows the quantiles of mobility variations across districts.**
 text
 
-```{r Figure 5}
+```{r Figure-5}
 if(if_run_regression_or_read_figure){
   l <- 1e-3
   exp <- 1e-3
   p <- beta_estimation_pipeline(l, ext)
 }else{
-  include_graphics("README_figs/README-unnamed-chunk-26-1.png")
+  include_graphics("Docs/Figure-5.png")
 }
 ```
 
