@@ -1,6 +1,8 @@
 ---
-title: "COVID19-India"
-output: github_document
+title: "What Explains India’s Second Wave of COVID-19 Infections?"
+output: 
+  github_document:
+    pandoc_args: "--webtex"
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +25,9 @@ library(glmnet)
 ```
 
 
-##  Dataset
+India experienced a rapid surge in COVID-19 infections during March-April 2021 that overwhelmed the healthcare system. This paper shows that the circulation of the Delta variant of the SARS-CoV-2 virus, amplified by a super-spreader event, likely caused India’s second wave. We analyze publicly available district-wise data of COVID-19 infections in India over 2020 and 2021. We use a combination of time-series analysis, epidemiological modeling, and parameter estimation methods. The data shows that a super-spreader event (Kumbh Mela festival being the possible candidate) is probable responsible for circulating the highly transmissible B.1.617.2 (Delta) variant of the SARS-CoV-2 virus that caused India’s second wave. Thus, the Indian experience serves as a cautionary tale that calls for increased genomic sequencing to identify variants of concern and to regulate super-spreader events, while vaccination remains the only long-term solution.
+
+The code of the  analysis is in the R Markdown source file [README.rmd](README.rmd). Draft of paper is in [COVID19-India.pdf](COVID19-India.pdf). Data is in folder [Data](/Data/). We obtained the data from [www.covid19india.org](https://www.covid19india.org/).
 
 ```{r}
 model_df <- read.csv("Data/dfIndia_to_models_districts_with_Mobility_for_paper.csv") %>%
@@ -38,11 +42,9 @@ second_wave_df <- model_df %>%
   filter(year(Date) == 2021, month(Date) %in% c(3,4,5))
 ```
 
-## The Simultaneity of Infections in the Second Wave
+**Figure 1. Plot (a) shows the number of daily new COVID-19 cases for all states in India, smoothed via a 21-day moving average.** 
 
-### State time-series plot
-
-```{r}
+```{r Figure 1 (a), echo=FALSE}
 text_size = 25
 model_df %>%
   group_by(District_ID) %>%
@@ -61,9 +63,9 @@ model_df %>%
 ```
 
 
-### Tp% Box plot
+<!-- #### Tp% Box plot -->
 
-```{r warning=FALSE}
+```{r, warning=FALSE}
 hitting_time_fun <- function(df) {
   wave_peak <- df %>%
     tail(1) %>%
@@ -111,7 +113,10 @@ second_raw <- second_wave_df %>%
   mutate(peak_time = as.numeric(peak_time))
 ```
 
-```{r}
+
+**Figure 2(a) portrays $T_{p\%}$  across 394 districts during the first wave.** 
+
+```{r Figure 2(a)}
 box_text_size = 25
 first_raw %>%
   filter(peak_id < 6) %>%
@@ -122,8 +127,8 @@ first_raw %>%
   scale_x_discrete(labels=c("10", "20", "30", "40", "50")) + scale_y_continuous(limits = c(0, 100))
 ```
 
-
-```{r}
+**Figure 2(b) portrays the same for the second wave.**
+```{r Figure 2(b)}
 box_text_size = 25
 second_raw %>%
   filter(peak_id < 6) %>%
@@ -138,7 +143,7 @@ second_raw %>%
 
 ## Origins of the COVID-19 Waves in India
 
-### Cross-covariance of time-series
+<!-- ### Cross-covariance of time-series -->
 
 <!-- ```{r} -->
 <!-- District_list <- model_df %>% -->
@@ -205,11 +210,20 @@ second_raw %>%
 <!-- heatmap(corMat_second) -->
 <!-- ``` -->
 
-
 ## Epidemiological Model to Explain India’s Infection Dynamics
+We consider an epidemiological diffusion model, estimate its parameters from the district-wise test results, and demonstrate lack of fit during the second wave. To this end, consider the susceptible-infected-removed (SIR) compartmental model, described by
+$$
+\begin{aligned}
+  S^i(t+1) &= S^i(t) - \beta^i_{\text{int}}I^i(t)S^i(t) -  \beta^i_{\text{ext}}I^i_{\text{ext}}(t)S^i(t)\\
+  I^i(t+1) &= I^i(t) + \beta^i_{\text{int}}I^i(t)S^i(t) +  \beta^i_{\text{ext}}I^i_{\text{ext}}(t)S^i(t) - \gamma I^i(t),\\
+  R^i(t+1) &= R^i(t) + \gamma I^i(t),    
+\end{aligned}
+$$
+where
+$$I_{\text{ext}}^i(t) = \frac{\sum_{j:(j,i) \in G}I^j(t)P^j}{\sum_{j:(j,i)\in G}P^j}.$$
+Please see paper for details. 
 
 ```{r}
-
 if(if_run_regression_or_read_figure){
   distance_df <- read.csv("Data/df_distance.csv")
   airport_df <- read.csv("Data/District_Airport_Matched_Edges.csv")
@@ -433,7 +447,10 @@ beta_estimation_pipeline <- function(lambda, lambda2) {
 }
 ```
 
-```{r}
+**Figure 5. Plots (a) and (b) capture the quantiles of  ’s and  ’s across districts over 2-week time windows from 05/01/2020 to 05/08/2021. The regression errors in explaining the emergence of daily new infections with the estimated β’s is given in (c). Plot (d) shows the quantiles of mobility variations across districts.**
+
+
+```{r Figure 5}
 if(if_run_regression_or_read_figure){
   l <- 1e-3
   exp <- 1e-3
