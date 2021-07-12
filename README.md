@@ -288,4 +288,4 @@ regression errors in explaining the emergence of daily new infections
 with the estimated β’s is given in (c). Plot (d) shows the quantiles of
 mobility variations across districts.** text
 
-<img src="Docs/Figure-5.png" width="4800" />
+<img src="Docs/Figure-5.png" width="1885" />
