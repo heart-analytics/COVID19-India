@@ -1,6 +1,18 @@
 What Explains India’s Second Wave of COVID-19 Infections?
 ================
 
+[Subhonmesh
+Bose](https://ece.illinois.edu/about/directory/faculty/boses), [Shuai
+Hao](https://giesbusiness.illinois.edu/profile/shuai-hao), [Sebastian
+Souyris](https://giesbusiness.illinois.edu/profile/sebastian-souyris),
+[Albert C. England
+III](https://providers.osfhealthcare.org/provider/Albert+C.+England/1465363),
+[Anton Ivanov](https://giesbusiness.illinois.edu/profile/anton-ivanov),
+[Ujjal Kumar
+Mukherjee](https://giesbusiness.illinois.edu/profile/ujjal-mukherjee),
+[Sridhar
+Seshadri](https://giesbusiness.illinois.edu/profile/sridhar-seshadri)
+
 India experienced a rapid surge in COVID-19 infections during
 March-April 2021 that overwhelmed the healthcare system. This paper
 shows that the circulation of the Delta variant of the SARS-CoV-2 virus,
@@ -250,32 +262,32 @@ Regression:
 \\begin{aligned}
     &\\varphi\\left({\\beta}\[1\], \\ldots, {\\beta}\[26\]\\right)
     \\\\
-    &:= \\sum\_{i=1}^N \\sum\_{\\tau=1}^{26} \\sum\_{t=14\\tau - 13}^{14\\tau} \\left(\\Delta^i(t) - \\beta^{i}\_{\\textrm{int}}\[\\tau\] I^i(t) S^i(t) 
+    &:= \\sum\_{i=1}^N \\sum\_{\\tau=1}^{26} \\sum\_{t=14\\tau - 13}^{14\\tau} \\left(\\Delta^i(t) - \\beta^{i}\_{\\textrm{int}}\[\\tau\] I^i(t) S^i(t)
     -  \\beta^{i}\_{\\textrm{ext}}\[\\tau\] I^i\_{\\textrm{ext}}(t) S^i(t) \\right)^2
     \\\\
     & \\quad + \\lambda \\sum\_{\\tau=1}^{25}
-    \\sum\_{i=1}^{N} 
-    \\left\[ \\left({\\beta}^i\_\\textrm{int}\[\\tau+1\]) - {\\beta}^i\_\\textrm{int}\[\\tau\]) \\right)^2 
+    \\sum\_{i=1}^{N}
+    \\left\[ \\left({\\beta}^i\_\\textrm{int}\[\\tau+1\]) - {\\beta}^i\_\\textrm{int}\[\\tau\]) \\right)^2
     + \\left({\\beta}^i\_\\textrm{ext}\[\\tau+1\]) - {\\beta}^i\_\\textrm{ext}\[\\tau\]) \\right)^2
     \\right\]
     \\\\
-    & \\quad 
+    & \\quad
     + \\rho \\sum\_{\\tau=1}^{26} \\sum\_{i=1}^{N} \\beta\_\\textrm{ext}\[\\tau\]^2.
 \\end{aligned}
-](https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Baligned%7D%0A%20%20%20%20%26%5Cvarphi%5Cleft%28%7B%5Cbeta%7D%5B1%5D%2C%20%5Cldots%2C%20%7B%5Cbeta%7D%5B26%5D%5Cright%29%0A%20%20%20%20%5C%5C%0A%20%20%20%20%26%3A%3D%20%5Csum_%7Bi%3D1%7D%5EN%20%5Csum_%7B%5Ctau%3D1%7D%5E%7B26%7D%20%5Csum_%7Bt%3D14%5Ctau%20-%2013%7D%5E%7B14%5Ctau%7D%20%5Cleft%28%5CDelta%5Ei%28t%29%20-%20%5Cbeta%5E%7Bi%7D_%7B%5Ctextrm%7Bint%7D%7D%5B%5Ctau%5D%20I%5Ei%28t%29%20S%5Ei%28t%29%20%0A%20%20%20%20-%20%20%5Cbeta%5E%7Bi%7D_%7B%5Ctextrm%7Bext%7D%7D%5B%5Ctau%5D%20I%5Ei_%7B%5Ctextrm%7Bext%7D%7D%28t%29%20S%5Ei%28t%29%20%5Cright%29%5E2%0A%20%20%20%20%5C%5C%0A%20%20%20%20%26%20%5Cquad%20%2B%20%5Clambda%20%5Csum_%7B%5Ctau%3D1%7D%5E%7B25%7D%0A%20%20%20%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20%0A%20%20%20%20%5Cleft%5B%20%5Cleft%28%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bint%7D%5B%5Ctau%2B1%5D%29%20-%20%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bint%7D%5B%5Ctau%5D%29%20%5Cright%29%5E2%20%0A%20%20%20%20%2B%20%5Cleft%28%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bext%7D%5B%5Ctau%2B1%5D%29%20-%20%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bext%7D%5B%5Ctau%5D%29%20%5Cright%29%5E2%0A%20%20%20%20%5Cright%5D%0A%20%20%20%20%5C%5C%0A%20%20%20%20%26%20%5Cquad%20%0A%20%20%20%20%2B%20%5Crho%20%5Csum_%7B%5Ctau%3D1%7D%5E%7B26%7D%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20%5Cbeta_%5Ctextrm%7Bext%7D%5B%5Ctau%5D%5E2.%0A%5Cend%7Baligned%7D%0A "
+](https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Baligned%7D%0A%20%20%20%20%26%5Cvarphi%5Cleft%28%7B%5Cbeta%7D%5B1%5D%2C%20%5Cldots%2C%20%7B%5Cbeta%7D%5B26%5D%5Cright%29%0A%20%20%20%20%5C%5C%0A%20%20%20%20%26%3A%3D%20%5Csum_%7Bi%3D1%7D%5EN%20%5Csum_%7B%5Ctau%3D1%7D%5E%7B26%7D%20%5Csum_%7Bt%3D14%5Ctau%20-%2013%7D%5E%7B14%5Ctau%7D%20%5Cleft%28%5CDelta%5Ei%28t%29%20-%20%5Cbeta%5E%7Bi%7D_%7B%5Ctextrm%7Bint%7D%7D%5B%5Ctau%5D%20I%5Ei%28t%29%20S%5Ei%28t%29%0A%20%20%20%20-%20%20%5Cbeta%5E%7Bi%7D_%7B%5Ctextrm%7Bext%7D%7D%5B%5Ctau%5D%20I%5Ei_%7B%5Ctextrm%7Bext%7D%7D%28t%29%20S%5Ei%28t%29%20%5Cright%29%5E2%0A%20%20%20%20%5C%5C%0A%20%20%20%20%26%20%5Cquad%20%2B%20%5Clambda%20%5Csum_%7B%5Ctau%3D1%7D%5E%7B25%7D%0A%20%20%20%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%0A%20%20%20%20%5Cleft%5B%20%5Cleft%28%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bint%7D%5B%5Ctau%2B1%5D%29%20-%20%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bint%7D%5B%5Ctau%5D%29%20%5Cright%29%5E2%0A%20%20%20%20%2B%20%5Cleft%28%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bext%7D%5B%5Ctau%2B1%5D%29%20-%20%7B%5Cbeta%7D%5Ei_%5Ctextrm%7Bext%7D%5B%5Ctau%5D%29%20%5Cright%29%5E2%0A%20%20%20%20%5Cright%5D%0A%20%20%20%20%5C%5C%0A%20%20%20%20%26%20%5Cquad%0A%20%20%20%20%2B%20%5Crho%20%5Csum_%7B%5Ctau%3D1%7D%5E%7B26%7D%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%20%5Cbeta_%5Ctextrm%7Bext%7D%5B%5Ctau%5D%5E2.%0A%5Cend%7Baligned%7D%0A "
 \begin{aligned}
     &\varphi\left({\beta}[1], \ldots, {\beta}[26]\right)
     \\
-    &:= \sum_{i=1}^N \sum_{\tau=1}^{26} \sum_{t=14\tau - 13}^{14\tau} \left(\Delta^i(t) - \beta^{i}_{\textrm{int}}[\tau] I^i(t) S^i(t) 
+    &:= \sum_{i=1}^N \sum_{\tau=1}^{26} \sum_{t=14\tau - 13}^{14\tau} \left(\Delta^i(t) - \beta^{i}_{\textrm{int}}[\tau] I^i(t) S^i(t)
     -  \beta^{i}_{\textrm{ext}}[\tau] I^i_{\textrm{ext}}(t) S^i(t) \right)^2
     \\
     & \quad + \lambda \sum_{\tau=1}^{25}
-    \sum_{i=1}^{N} 
-    \left[ \left({\beta}^i_\textrm{int}[\tau+1]) - {\beta}^i_\textrm{int}[\tau]) \right)^2 
+    \sum_{i=1}^{N}
+    \left[ \left({\beta}^i_\textrm{int}[\tau+1]) - {\beta}^i_\textrm{int}[\tau]) \right)^2
     + \left({\beta}^i_\textrm{ext}[\tau+1]) - {\beta}^i_\textrm{ext}[\tau]) \right)^2
     \right]
     \\
-    & \quad 
+    & \quad
     + \rho \sum_{\tau=1}^{26} \sum_{i=1}^{N} \beta_\textrm{ext}[\tau]^2.
 \end{aligned}
 ")
