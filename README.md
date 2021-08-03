@@ -13,6 +13,8 @@ Mukherjee](https://giesbusiness.illinois.edu/profile/ujjal-mukherjee),
 [Sridhar
 Seshadri](https://giesbusiness.illinois.edu/profile/sridhar-seshadri)
 
+[HEART Analytics home page](https://heart-analytics.github.io/Home/)
+
 India experienced a rapid surge in COVID-19 infections during
 March-April 2021 that overwhelmed the healthcare system. This paper
 shows that the circulation of the Delta variant of the SARS-CoV-2 virus,
