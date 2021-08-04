@@ -13,8 +13,6 @@ Mukherjee](https://giesbusiness.illinois.edu/profile/ujjal-mukherjee),
 [Sridhar
 Seshadri](https://giesbusiness.illinois.edu/profile/sridhar-seshadri)
 
-[HEART Analytics home page](https://heart-analytics.github.io/Home/)
-
 India experienced a rapid surge in COVID-19 infections during
 March-April 2021 that overwhelmed the healthcare system. This paper
 shows that the circulation of the Delta variant of the SARS-CoV-2 virus,
@@ -35,6 +33,8 @@ The source code of the analysis presented here is in the R Markdown file
 [COVID19-India.pdf](/Docs/COVID19-India.pdf). The data is in
 [Data](/Data) folder. We obtained the data from
 [www.covid19india.org](https://www.covid19india.org/).
+
+HEART Group [home page](https://heart-analytics.github.io/Home/).
 
 **Figure 1(a) shows the number of daily new COVID-19 cases for all
 states in India, smoothed via a 21-day moving average.**
