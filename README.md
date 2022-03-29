@@ -1,10 +1,10 @@
-What Explains India’s Second Wave of COVID-19 Infections?
+Not All COVID-19 Waves are Similar: Origins, Detection and Mitigation Strategies for Simultaneous Waves
 ================
-
+[Sebastian
+Souyris](https://giesbusiness.illinois.edu/profile/sebastian-souyris),
 [Subhonmesh
 Bose](https://ece.illinois.edu/about/directory/faculty/boses), [Shuai
-Hao](https://giesbusiness.illinois.edu/profile/shuai-hao), [Sebastian
-Souyris](https://giesbusiness.illinois.edu/profile/sebastian-souyris),
+Hao](https://giesbusiness.illinois.edu/profile/shuai-hao),
 [Albert C. England
 III](https://providers.osfhealthcare.org/provider/Albert+C.+England/1465363),
 [Anton Ivanov](https://giesbusiness.illinois.edu/profile/anton-ivanov),
@@ -13,20 +13,15 @@ Mukherjee](https://giesbusiness.illinois.edu/profile/ujjal-mukherjee),
 [Sridhar
 Seshadri](https://giesbusiness.illinois.edu/profile/sridhar-seshadri)
 
-India experienced a rapid surge in COVID-19 infections during
-March-April 2021 that overwhelmed the healthcare system. This paper
-shows that the circulation of the Delta variant of the SARS-CoV-2 virus,
-amplified by a super-spreader event, likely caused India’s second wave.
-We analyze publicly available district-wise data of COVID-19 infections
-in India over 2020 and 2021. We use a combination of time-series
-analysis, epidemiological modeling, and parameter estimation methods.
-The data shows that a super-spreader event (Kumbh Mela festival being
-the possible candidate) is probable responsible for circulating the
-highly transmissible B.1.617.2 (Delta) variant of the SARS-CoV-2 virus
-that caused India’s second wave. Thus, the Indian experience serves as a
-cautionary tale that calls for increased genomic sequencing to identify
-variants of concern and to regulate super-spreader events, while
-vaccination remains the only long-term solution.
+**Background:** The sudden spread of COVID-19 infections in a region can catch its healthcare system by surprise. Can one anticipate such a spread and allow healthcare administrators to prepare for a surge \emph{a priori}?
+We posit that the answer lies in distinguishing between two types of waves in epidemic dynamics. The first kind resembles a spatio-temporal \emph{diffusion} pattern. Its gradual spread allows administrators to marshal resources to combat the epidemic. The second kind is caused by super-spreader events, which provide \emph{shocks} to the disease propagation dynamics. Such shocks simultaneously affect a large geographical region and leave little time for the healthcare system to respond.
+
+**Methods:** We use time-series analysis and epidemiological model estimation to detect and react to such simultaneous waves using COVID-19 data from the time when the B.1.617.2 (Delta) variant of the SARS-CoV-2 virus dominated the spread. We first analyze India's second wave from April to May 2021 that overwhelmed the Indian healthcare system. Then, we analyze data of COVID-19 infections in the United States (US) and countries with a high and low Indian diaspora.
+
+**Results:** We identify the Kumbh Mela festival as the likely super-spreader event, the exogenous shock, behind India's second wave. We show that a multi-area compartmental epidemiological model does not fit such shock-induced disease dynamics well, in contrast to its performance with diffusion-type spread. The insufficient fit to infection data can be detected in the early stages of a shock-wave propagation and can be used as an early warning sign, providing valuable time for a planned healthcare response. Our analysis of COVID-19 infections in the US reveals that simultaneous waves due to super-spreader events in one country (India) can lead to simultaneous waves in other places. The US wave in the summer of 2021 does not fit a diffusion pattern either. We postulate that international travels from India caused this wave. To support that hypothesis, we demonstrate that countries with a high Indian diaspora exhibit infection growth soon after India's second wave, compared to countries with a low Indian diaspora.
+
+**Conclusions:** Based on our data analysis, we provide concrete policy recommendations at various stages of a simultaneous wave, including how to avoid it, how to detect it quickly after a potential super-spreader event occurs, and how to proactively contain its spread.
+
 
 The source code of the analysis presented here is in the R Markdown file
 [README.Rmd](/README.Rmd). Draft of paper is in
